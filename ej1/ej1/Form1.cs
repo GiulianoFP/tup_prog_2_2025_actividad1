@@ -27,7 +27,10 @@ namespace ej1
 
             //llamando al mensaje común de todos los objetos figura
 
-            tbDescripcion.Text += $@"[{objeto3.Describir()},]";
+            Rectangulo rect3 = new Rectangulo(3, 6);
+            Rectangulo rect4 = new Rectangulo(3, 6);
+
+            tbDescripcion.Text = $@"[{rect3.Describir()}, {objeto3.Describir()}]";
 
         }
 }

@@ -21,7 +21,12 @@ public class Rectangulo
             }
         public string Describir()
             {
-                return $"Rectangulo:{Ancho},{Largo}";
+                return $@"{{
+  ""Tipo"" : ""Rectangulo"",
+  ""Ancho"" : {Ancho},
+  ""Largo"" : {Largo}
+}}";
             }
     }
 }
+    
